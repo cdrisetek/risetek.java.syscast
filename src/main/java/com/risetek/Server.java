@@ -23,15 +23,21 @@ public class Server extends Thread {
 	}
 
 	private void receiveIP(DatagramSocket dgSocket) throws Exception {
+		XMLParser parser = new XMLParser();
 		while (true) {
 			byte[] by = new byte[1024];
 			DatagramPacket packet = new DatagramPacket(by, by.length);
 			dgSocket.receive(packet);
 
 			String str = new String(packet.getData(), 0, packet.getLength());
-
 			System.out.println("Packet Size:" + str.length());
 			System.out.println(str);
+
+			try {
+				parser.parser(str);
+			} catch (Exception e) {
+				System.out.println("Parse Failed");
+			}
 		}
 	}
 }
