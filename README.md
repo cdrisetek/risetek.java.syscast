@@ -3,6 +3,7 @@
 ## 执行方式
 * ```mvn exec:java```
 * 或者在target目录下：```java -jar risetek.syscast-1.0-SNAPSHOT.jar```
+* 下载的可执行文件，用：```java -jar syscast.jar```
 
 ## 输出结果
 * 示例程序在局域网络上接收设备发出的UDP广播信号，将接收到的报文转变成字符串在控制台上输出。
