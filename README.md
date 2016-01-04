@@ -14,3 +14,5 @@
 * ident是从该模块所使用的(U)SIM卡上获取的IMEI号码，是唯一的号码
 * signal表明信号强度，一般从1-31，99表明未能分辨出信号
 
+## 可执行文件下载：
+ http://www.risetek.com/download/syscast.jar
