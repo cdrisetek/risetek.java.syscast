@@ -30,7 +30,7 @@ public class Server extends Thread {
 			dgSocket.receive(packet);
 
 			String str = new String(packet.getData(), 0, packet.getLength());
-			System.out.println("Packet Size:" + str.length());
+			System.out.println("Packet from: " + packet.getAddress() + " Size:" + str.length());
 			System.out.println(str);
 
 			try {
