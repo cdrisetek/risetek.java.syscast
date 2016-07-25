@@ -3,6 +3,7 @@
 ## 执行方式
 * ```mvn exec:java```
 * 或者在target目录下：```java -jar risetek.syscast-1.0-SNAPSHOT.jar```
+* 下载的可执行文件，用：```java -jar syscast.jar```
 
 ## 输出结果
 * 示例程序在局域网络上接收设备发出的UDP广播信号，将接收到的报文转变成字符串在控制台上输出。
@@ -14,3 +15,5 @@
 * ident是从该模块所使用的(U)SIM卡上获取的IMEI号码，是唯一的号码
 * signal表明信号强度，一般从1-31，99表明未能分辨出信号
 
+## 可执行文件下载：
+ http://www.risetek.com/download/syscast.jar
